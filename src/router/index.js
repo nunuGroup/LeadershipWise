@@ -1,5 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import LearningTimeline from '../views/LearningTimeline.vue'
+import PerformanceAnalysis from '../views/PerformanceAnalysis.vue'
+import MonthlyStats from '../views/MonthlyStats.vue'
+import TeamOrganization from '../views/TeamOrganization.vue'
+import Results from '../views/Results.vue'
+import EmployeeAnalysis from '../views/EmployeeAnalysis.vue'
 
 const routes = [
   {
@@ -8,13 +14,35 @@ const routes = [
     component: Home
   },
   {
-    path: '/library',
-    name: 'Library',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/Library.vue')
-  }
+    path: '/learning_timeline',
+    name: 'LearningTimeline',
+    component: LearningTimeline
+  },
+  {
+    path: "/performance_analysis",
+    name: "PerformanceAnalysis",
+    component: PerformanceAnalysis
+  },
+  {
+    path: "/monthly_stats",
+    name: "MonthlyStats",
+    component: MonthlyStats
+  },
+  {
+    path: "/team_organization",
+    name: "TeamOrganization",
+    component: TeamOrganization
+  },
+  {
+    path: "/results",
+    name: "/Results",
+    component: Results
+  },
+  {
+    path: "/employee_analysis",
+    name: "EmployeeAnalysis",
+    component: EmployeeAnalysis
+  },
 ]
 
 const router = createRouter({

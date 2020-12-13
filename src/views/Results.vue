@@ -4,12 +4,13 @@
       <div class="div2 dash-item"></div>
       <div class="div3 dash-item"></div>
       <div class="div4 dash-item"></div>
+      <div class="div5 dash-item"></div>
     </div>  
 </template>
 
 <script>
 export default {
-  name: 'Home',
+  name: 'Results',
   components: {
     
   }
@@ -36,10 +37,11 @@ export default {
   margin-top: 84px;
 }
 
-.div1 { grid-area: 1 / 1 / 4 / 4; }
-.div2 { grid-area: 1 / 4 / 4 / 7; }
-.div3 { grid-area: 4 / 1 / 7 / 5; }
-.div4 { grid-area: 4 / 5 / 7 / 7; }
+.div1 { grid-area: 3 / 1 / 7 / 4; }
+.div2 { grid-area: 3 / 4 / 7 / 7; }
+.div3 { grid-area: 1 / 1 / 3 / 3; }
+.div4 { grid-area: 1 / 3 / 3 / 5; }
+.div5 { grid-area: 1 / 5 / 3 / 7; }
 
 .dash-item {
   background: white;

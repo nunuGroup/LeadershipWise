@@ -4,12 +4,13 @@
       <div class="div2 dash-item"></div>
       <div class="div3 dash-item"></div>
       <div class="div4 dash-item"></div>
+      <div class="div5 dash-item"></div>
     </div>  
 </template>
 
 <script>
 export default {
-  name: 'Home',
+  name: 'LearningTimeline',
   components: {
     
   }
@@ -27,8 +28,8 @@ export default {
 
 .parent {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
   grid-gap: 12px;
   height: 90vh;
   width: calc(100vw - 424px);
@@ -36,10 +37,11 @@ export default {
   margin-top: 84px;
 }
 
-.div1 { grid-area: 1 / 1 / 4 / 4; }
-.div2 { grid-area: 1 / 4 / 4 / 7; }
-.div3 { grid-area: 4 / 1 / 7 / 5; }
-.div4 { grid-area: 4 / 5 / 7 / 7; }
+.div1 { grid-area: 1 / 1 / 5 / 9; }
+.div2 { grid-area: 5 / 1 / 9 / 3; }
+.div3 { grid-area: 5 / 3 / 9 / 5; }
+.div4 { grid-area: 5 / 5 / 9 / 7; }
+.div5 { grid-area: 5 / 7 / 9 / 9; }
 
 .dash-item {
   background: white;

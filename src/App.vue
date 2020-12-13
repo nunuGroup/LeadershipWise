@@ -32,7 +32,7 @@ export default {
 
 .app-container {
   display: flex;
-  background: #e0e0e0;
+  background: #eee;
 }
 
 body {

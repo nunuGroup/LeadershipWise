@@ -3,13 +3,12 @@
       <div class="div1 dash-item"></div>
       <div class="div2 dash-item"></div>
       <div class="div3 dash-item"></div>
-      <div class="div4 dash-item"></div>
     </div>  
 </template>
 
 <script>
 export default {
-  name: 'Home',
+  name: 'TeamOrganization',
   components: {
     
   }
@@ -27,8 +26,8 @@ export default {
 
 .parent {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
   grid-gap: 12px;
   height: 90vh;
   width: calc(100vw - 424px);
@@ -36,10 +35,9 @@ export default {
   margin-top: 84px;
 }
 
-.div1 { grid-area: 1 / 1 / 4 / 4; }
-.div2 { grid-area: 1 / 4 / 4 / 7; }
-.div3 { grid-area: 4 / 1 / 7 / 5; }
-.div4 { grid-area: 4 / 5 / 7 / 7; }
+.div1 { grid-area: 1 / 6 / 5 / 9; }
+.div2 { grid-area: 5 / 6 / 9 / 9; }
+.div3 { grid-area: 1 / 1 / 9 / 6; }
 
 .dash-item {
   background: white;

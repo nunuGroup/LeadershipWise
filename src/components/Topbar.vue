@@ -42,9 +42,18 @@ export default {
 <style lang="scss" scoped>
 @import '../assets/styles/global';
 
+$topbarHeight: 80px;
+
+.topbar-container-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;   
+    margin-top: 8px;
+}
+
 .title {
     margin-left: 436px;
-    font-size: 14px;
+    font-size: 12px;
     color: $colorMain;
     cursor: default;
     
@@ -56,6 +65,7 @@ export default {
 .topbar-right {
     display: flex;
     align-items: center;
+    height: $topbarHeight;
 
     .profile-action {
         display: flex;
@@ -110,12 +120,6 @@ export default {
         font-size: 24px;
         cursor: default;
     }
-}
-
-.topbar-container-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;   
 }
 
 .right-action {
