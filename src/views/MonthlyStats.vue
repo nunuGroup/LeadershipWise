@@ -30,11 +30,11 @@ export default {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
-  grid-gap: 12px;
+  grid-gap: $gridGap;
   height: 90vh;
   width: calc(100vw - 424px);
-  padding: 12px;
-  margin-top: 84px;
+  padding: $gridGap;
+  margin-top: $topbarHeight;
 }
 
 .div1 { grid-area: 5 / 1 / 9 / 9; }
